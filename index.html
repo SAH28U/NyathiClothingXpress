@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYATHI X CLOTHING - Premium Fashion & Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>NYATHI X CLOTHING</h1></a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="products.html" class="nav-link">Shop</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="nav-link dropdown-toggle">Collections <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="menCollections.html">Men's Collection</a></li>
+                            <li><a href="womensCollections.html">Women's Collection</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about us.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="account.html" class="nav-link">Account</a></li>
+                    <li><a href="register.html" class="nav-link">Register</a></li>                    
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav">
+            <span class="close-btn">&times;</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li class="mobile-dropdown-toggle">
+                    <a href="#">Collections <i class="fas fa-caret-down"></i></a>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="menCollections.html">Men's Collection</a></li>
+                        <li><a href="womensCollections.html">Women's Collection</a></li>
+                    </ul>
+                </li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="register.html">Register</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('IMG/hero-bg-1.jpg');">
+                <div class="container hero-content">
+                    <h2>Unleash Your Style</h2>
+                    <p>Discover our Summer 2025 Collection – fresh, bold, and expressive.</p>
+                    <a href="products.html" class="btn btn-primary">Shop New Arrivals</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('IMG/hero-bg-2.jpg');">
+                <div class="container hero-content">
+                    <h2>Timeless Elegance Meets Modern Edge</h2>
+                    <p>Curated collections for every occasion. Find your perfect fit.</p>
+                    <a href="menCollections.html" class="btn btn-primary">Shop Men's</a>
+                    <a href="womensCollections.html" class="btn btn-secondary">Shop Women's</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-arrow left" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-arrow right" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots"></div>
+    </section>
+
+    <section class="categories-section py-60">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <a href="menCollections.html" class="category-card category-men">
+                    <img src="mans.jpg" alt="Men's Clothing">
+                    <div class="category-info">
+                        <h3>Men's Wear</h3>
+                        <p>Sophisticated & Casual Styles</p>
+                    </div>
+                </a>
+                <a href="womensCollections.html" class="category-card category-women">
+                    <img src="womans.webp" alt="Women's Clothing">
+                    <div class="category-info">
+                        <h3>Women's Wear</h3>
+                        <p>Chic & Trendy Ensembles</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section py-60 bg-light-gray">
+        <div class="container">
+
+            <div class="text-center mt-40">
+                <a href="products.html" class="btn btn-primary-outline">View All Products <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-newsletter-section py-60 bg-primary-gradient">
+        <div class="container text-center text-white">
+            <h2 class="section-title text-white">Stay Updated with NYATHI X CLOTHING</h2>
+            <p class="lead">Sign up for our newsletter to get exclusive offers, new collection alerts, and style tips directly to your inbox!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-dark-outline">Subscribe Now</button>
+            </form>
+            <div class="social-icons mt-30">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us-section py-60">
+        <div class="container">
+            <h2 class="section-title">Why Choose NYATHI X CLOTHING?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-rocket feature-icon"></i>
+                    <h3>Fast & Reliable Delivery</h3>
+                    <p>Get your fashion fix delivered swiftly to your doorstep across South Africa.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Secure Payments</h3>
+                    <p>Shop with confidence using our encrypted and secure payment gateways.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>NYATHI X CLOTHING</h3>
+                    <p>Your ultimate destination for contemporary and classic fashion. We blend quality, style, and affordability to bring you the best in clothing.</p>
+                    <div class="payment-methods">
+                        <img src="visa.png" alt="Visa">
+                        <img src="card.png" alt="Mastercard">
+                        <img src="paypal.png" alt="PayPal">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop All</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="account.html">My Account</a></li>
+
+                        <li><a href="shipping-info.html">Shipping Information</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 153 Brakpan North, Wardans City, Gauteng, SA</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+27814048821">(+27) 81 404 8821</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@nyathixclothing.co.za">info@nyathixclothing.co.za</a></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NYATHI X CLOTHING. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cart.js"></script> <script>
+        // Inline script for hero slider and dynamic product loading
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Hero Slider Logic ---
+            const slides = document.querySelectorAll('.hero-slide');
+            const dotsContainer = document.querySelector('.slider-dots');
+            const prevArrow = document.querySelector('.slider-arrow.left');
+            const nextArrow = document.querySelector('.slider-arrow.right');
+            let currentSlide = 0;
+            let slideInterval;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    if (i === index) {
+                        slide.classList.add('active');
+                    }
+                });
+                updateDots(index);
+            }
+
+            function updateDots(index) {
+                dotsContainer.innerHTML = ''; // Clear existing dots
+                slides.forEach((_, i) => {
+                    const dot = document.createElement('span');
+                    dot.classList.add('dot');
+                    if (i === index) {
+                        dot.classList.add('active');
+                    }
+                    dot.addEventListener('click', () => {
+                        currentSlide = i;
+                        showSlide(currentSlide);
+                        resetInterval();
+                    });
+                    dotsContainer.appendChild(dot);
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            function startSlider() {
+                slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+            }
+
+            function resetInterval() {
+                clearInterval(slideInterval);
+                startSlider();
+            }
+
+            prevArrow.addEventListener('click', () => {
+                prevSlide();
+                resetInterval();
+            });
+            nextArrow.addEventListener('click', () => {
+                nextSlide();
+                resetInterval();
+            });
+
+            showSlide(currentSlide); // Initialize first slide
+            startSlider(); // Start auto-play
+
+            // --- Dynamic Bestseller Products Loading ---
+            const bestsellerProductsGrid = document.getElementById('bestseller-products-grid');
+
+            // Simulate fetching data for bestsellers
+            // In a real application, you would fetch this from your API
+            const bestsellers = [
+                { id: 'prod001', name: 'Elegant Slim Fit Shirt', category: "Men's Shirts", price: 399.00, image: 'IMG/mens-shirt-1.jpg', link: 'product-detail.html?id=prod001' },
+                { id: 'prod002', name: 'High-Waisted Denim Jeans', category: "Women's Jeans", price: 499.00, image: 'IMG/womens-jeans-1.jpg', link: 'product-detail.html?id=prod002' },
+                { id: 'prod003', name: 'Classic Polo T-Shirt', category: "Men's T-Shirts", price: 280.00, image: 'IMG/mens-polo-1.jpg', link: 'product-detail.html?id=prod003' },
+                { id: 'prod004', name: 'Floral Summer Dress', category: "Women's Dresses", price: 550.00, image: 'IMG/womens-dress-1.jpg', link: 'product-detail.html?id=prod004' }
+            ];
+
+            function loadBestsellers() {
+                if (bestsellerProductsGrid) {
+                    bestsellerProductsGrid.innerHTML = ''; // Clear existing content
+                    bestsellers.forEach(product => {
+                        const productCard = document.createElement('div');
+                        productCard.className = 'product-card';
+                        productCard.innerHTML = `
+                            <a href="${product.link}" class="product-image">
+                                <img src="${product.image}" alt="${product.name}">
+                            </a>
+                            <div class="product-info">
+                                <h4 class="product-title"><a href="${product.link}">${product.name}</a></h4>
+                                <p class="product-category">${product.category}</p>
+                                <span class="product-price">R ${product.price.toFixed(2)}</span>
+                                <button class="btn add-to-cart-btn" data-product-id="${product.id}">Add to Cart</button>
+                            </div>
+                        `;
+                        bestsellerProductsGrid.appendChild(productCard);
+                    });
+
+                    // Add event listeners for "Add to Cart" buttons
+                    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+                        button.addEventListener('click', (event) => {
+                            const productId = event.target.dataset.productId;
+                            const product = bestsellers.find(p => p.id === productId);
+                            if (product) {
+                                // Assume a simplified `addToCart` function exists in cart.js
+                                // You might need to adjust this to match your actual cart.js logic
+                                const itemToAdd = {
+                                    id: product.id,
+                                    title: product.name,
+                                    price: product.price,
+                                    image: product.image,
+                                    quantity: 1
+                                };
+                                addToCart(itemToAdd); // This function should be defined in cart.js
+                                alert(`${product.name} added to cart!`); // Simple feedback
+                            }
+                        });
+                    });
+                }
+            }
+
+            loadBestsellers(); // Load bestsellers on page load
+
+            // --- Mobile Navigation Logic ---
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+            const closeBtn = document.querySelector('.mobile-nav .close-btn');
+            const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
+            const mobileDropdownMenu = document.querySelector('.mobile-dropdown-menu');
+
+            hamburgerMenu.addEventListener('click', () => {
+                mobileNavOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling on body
+            });
+
+            closeBtn.addEventListener('click', () => {
+                mobileNavOverlay.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+
+            mobileNavOverlay.addEventListener('click', (event) => {
+                if (event.target === mobileNavOverlay) {
+                    mobileNavOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            mobileDropdownToggle.addEventListener('click', (event) => {
+                event.preventDefault();
+                mobileDropdownMenu.classList.toggle('active');
+                mobileDropdownToggle.querySelector('i').classList.toggle('fa-caret-down');
+                mobileDropdownToggle.querySelector('i').classList.toggle('fa-caret-up');
+            });
+        });
+    </script>
+</body>
+</html>

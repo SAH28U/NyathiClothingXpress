@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - NYATHI X CLOTHING</title>
+    <link rel="stylesheet" href="CSS/style_8.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="account-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>NYATHI X CLOTHING</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="register-container">
+        <div class="container">
+            <div class="register-header">
+                <h1>Create Your Account</h1>
+                <p>Join NYATHI X CLOTHING to enjoy faster checkout, order tracking, and exclusive offers.</p>
+                <div class="register-progress">
+                    <div class="progress-step active">
+                        <span>1</span>
+                        <p>Account Details</p>
+                    </div>
+                    <div class="progress-step">
+                        <span>2</span>
+                        <p>Shipping Info</p>
+                    </div>
+                    <div class="progress-step">
+                        <span>3</span>
+                        <p>Complete</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-content">
+                <form id="register-form" class="account-form">
+                    <div class="form-section active" id="account-section">
+                        <h2>Account Information</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" required autocomplete="given-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" required autocomplete="family-name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email Address *</label>
+                            <input type="email" id="register-email" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Password *</label>
+                            <input type="password" id="register-password" required autocomplete="new-password">
+                            <div class="password-strength">
+                                <span class="strength-bar"></span>
+                                <span class="strength-bar"></span>
+                                <span class="strength-bar"></span>
+                                <span class="strength-text">Password strength</span>
+                            </div>
+                            <small class="form-hint">Minimum 8 characters with at least one number</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password *</label>
+                            <input type="password" id="confirm-password" required autocomplete="new-password">
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="newsletter" checked>
+                            <label for="newsletter">Subscribe to our newsletter for exclusive offers</label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" id="next-btn">Continue</button>
+                        </div>
+                        <div class="form-footer">
+                            <p>Already have an account? <a href="account.html">Sign in here</a></p>
+                        </div>
+                    </div>
+
+                    <div class="form-section" id="shipping-section">
+                        <h2>Shipping Information</h2>
+                        <div class="form-group">
+                            <label for="shipping-address">Street Address *</label>
+                            <input type="text" id="shipping-address" required autocomplete="street-address">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="shipping-city">City *</label>
+                                <input type="text" id="shipping-city" required autocomplete="address-level2">
+                            </div>
+                            <div class="form-group">
+                                <label for="shipping-postal">Postal Code *</label>
+                                <input type="text" id="shipping-postal" required autocomplete="postal-code">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="shipping-country">Country *</label>
+                            <select id="shipping-country" required autocomplete="country">
+                                <option value="">Select Country</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="UK">United Kingdom</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="shipping-phone">Phone Number *</label>
+                            <input type="tel" id="shipping-phone" required autocomplete="tel">
+                            <small class="form-hint">For delivery updates</small>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" id="back-btn">Back</button>
+                            <a href="account.html"><button type="submit" class="btn btn-primary">Complete Registration</button></a>
+                        </div>
+                    </div>
+
+                    <div class="form-section" id="complete-section">
+                        <div class="register-complete">
+                            <div class="complete-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h2>Registration Complete!</h2>
+                            <p>Welcome to the NYATHI X CLOTHING family. Your account has been successfully created.</p>
+                            <div class="complete-actions">
+                                <a href="products.html" class="btn btn-primary">Start Shopping</a>
+                                <a href="account.html" class="btn btn-secondary">View Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="register-benefits">
+                    <h3>Benefits of Registering</h3>
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h4>Faster Checkout</h4>
+                                <p>Save your details for quick and easy purchases</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-history"></i>
+                            <div>
+                                <h4>Order Tracking</h4>
+                                <p>View your order history and track shipments</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-tag"></i>
+                            <div>
+                                <h4>Exclusive Offers</h4>
+                                <p>Get access to members-only discounts and sales</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Wish Lists</h4>
+                                <p>Save your favorite items for later</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="account-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>NYATHI X CLOTHING</h3>
+                    <p>Your one-stop shop for the latest fashion trends. Quality and style delivered to your doorstep.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="shipping-info.html">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 153 Brakpan North, Wardans City, SA</p>
+                        <p><i class="fas fa-phone"></i> (+27)81 404 8821</p>
+                        <p><i class="fas fa-envelope"></i> info@nyathixclothing.co.za</p>
+                    </address>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 NYATHI X CLOTHING. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="register.js"></script>
+</body>
+</html>

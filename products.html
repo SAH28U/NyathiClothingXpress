@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the latest fashion trends at NYATHI X CLOTHING. Browse our collection of men's, women's, and kids' wear.">
+    <title>Shop - NYATHI X CLOTHING | Premium Fashion Retailer</title>
+    <link rel="stylesheet" href="CSS/style_2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" aria-label="NYATHI X CLOTHING Homepage">
+                    <h1>NYATHI X CLOTHING</h1>
+                </a>
+            </div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" aria-current="page">Shop</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cart.html" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-cart"></i> 
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="product-listing">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="index.html" class="btn btn-back">&larr; Back to Home</a>
+            </div>
+            
+            <div class="listing-header">
+                <h1 class="page-title">Our Collection</h1>
+                <div class="sort-filter">
+                    <div class="filter-group">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by" aria-label="Sort products">
+                            <option value="default">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name-asc">Name: A-Z</option>
+                            <option value="name-desc">Name: Z-A</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-category">Filter by:</label>
+                        <select id="filter-category" aria-label="Filter by category">
+                            <option value="all">All Categories</option>
+                            <option value="men">Men's Wear</option>
+                            <option value="women">Women's Wear</option>
+                            <option value="kids">Kids' Wear</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-grid" id="all-products">
+                <!-- Men's Products -->
+                <article class="product-card" data-category="men">
+                    <div class="product-image">
+                        <img src="t-shirt.jpg" alt="Men's Classic Cotton T-Shirt in white" loading="lazy">
+                        <button class="quick-view" aria-label="Quick view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="menCollections.html">Classic Cotton T-Shirt</a></h2>
+                        <span class="product-price">R 89.99</span>
+                        <button class="add-to-cart" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="men">
+                    <div class="product-image">
+                        <img src="jans.webp" alt="Men's Slim Fit Jeans in blue denim" loading="lazy">
+                        <button class="quick-view" aria-label="Quick view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="menCollections.html">Slim Fit Jeans</a></h2>
+                        <span class="product-price">R 159.99</span>
+                        <button class="add-to-cart" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="men">
+                    <div class="product-image">
+                        <img src="sho.jpeg" alt="Men's Formal Dress Shirt in white" loading="lazy">
+                        <button class="quick-view" aria-label="Quick view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="menCollections.html">Formal Dress Shirt</a></h2>
+                        <span class="product-price">R 349.99</span>
+                        <button class="add-to-cart" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="men">
+                    <div class="product-image">
+                        <img src="jac.webp" alt="Men's Denim Jacket in medium blue" loading="lazy">
+                        <button class="quick-view" aria-label="Quick view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="menCollections.html">Denim Jacket</a></h2>
+                        <span class="product-price">R 579.99</span>
+                        <button class="add-to-cart" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="men">
+                    <div class="product-image">
+                        <img src="Sneakers.webp" alt="Men's Sneakers in white and black" loading="lazy">
+                        <button class="quick-view" aria-label="Quick view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="menCollections.html">Men's Sneakers</a></h2>
+                        <span class="product-price">R 1,579.99</span>
+                        <button class="add-to-cart" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Women's Products -->
+                <article class="product-card" data-category="women">
+                    <div class="product-image">
+                        <img src="t-shirt.webp" alt="Women's T-Shirt in pastel pink" loading="lazy">
+                        <button class="quick-view" aria-label="Quick view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="womensCollections.html">Women's T-Shirt</a></h2>
+                        <span class="product-price">R 129.99</span>
+                        <button class="add-to-cart" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="women">
+                    <div class="product-image">
+                        <img src="Womans Jeans.webp" alt="Women's Skinny Fit Jeans in black" loading="lazy">
+                        <button class="quick-view" aria-label="Quick view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="womensCollections.html">Skinny Fit Jeans</a></h2>
+                        <span class="product-price">R 379.99</span>
+                        <button class="add-to-cart" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="women">
+                    <div class="product-image">
+                        <img src="floral dress.webp" alt="Women's Floral Dress with summer pattern" loading="lazy">
+                        <button class="quick-view" aria-label="Quick view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="womensCollections.html">Floral Dress</a></h2>
+                        <span class="product-price">R 349.99</span>
+                        <button class="add-to-cart" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="women">
+                    <div class="product-image">
+                        <img src="womes jacket.webp" alt="Women's Cropped Denim Jacket in light blue" loading="lazy">
+                        <button class="quick-view" aria-label="Quick view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="womensCollections.html">Cropped Denim Jacket</a></h2>
+                        <span class="product-price">R 549.99</span>
+                        <button class="add-to-cart" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="women">
+                    <div class="product-image">
+                        <img src="womans shoes.jpeg" alt="Women's Sneakers in white and pink" loading="lazy">
+                        <button class="quick-view" aria-label="Quick view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="womensCollections.html">Women's Sneakers</a></h2>
+                        <span class="product-price">R 949.99</span>
+                        <button class="add-to-cart" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>NYATHI X CLOTHING</h3>
+                    <p>Your premier destination for contemporary fashion. We blend quality craftsmanship with modern style to deliver exceptional clothing for every occasion.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="shipping-info.html">Shipping Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 153 Brakpan North, Wardans City, SA</p>
+                        <p><i class="fas fa-phone"></i> (+27) 81 404 8821</p>
+                        <p><i class="fas fa-envelope"></i> info@nyathixclothing.co.za</p>
+                    </address>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 NYATHI X CLOTHING. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

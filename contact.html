@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NYATHI X CLOTHING</title>
+    <link rel="stylesheet" href="style_9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header class="contact-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>NYATHI X CLOTHING</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li class="active"><a href="contact-us.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+                    <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </button>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p>We'd love to hear from you! Reach out for inquiries, feedback, or just to say hello.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="contact-grid">
+                <section class="contact-form-section">
+                    <h2><i class="fas fa-envelope"></i> Send Us a Message</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="order">Order Inquiry</option>
+                                <option value="product">Product Question</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </section>
+
+                <aside class="contact-info-section">
+                    <div class="contact-info-card">
+                        <h2><i class="fas fa-info-circle"></i> Contact Information</h2>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Visit Us</h3>
+                                <p>153 Brakpan North<br>Wardans City, Gauteng<br>South Africa</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+27 81 404 8821<br>Mon-Fri: 9am-5pm</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@nyathixclothing.co.za<br>response within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="store-hours-card">
+                        <h2><i class="fas fa-clock"></i> Store Hours</h2>
+                        <ul class="hours-list">
+                            <li>
+                                <span>Monday</span>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Tuesday</span>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Wednesday</span>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Thursday</span>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Friday</span>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Saturday</span>
+                                <span>10:00 AM - 2:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <section class="map-section">
+                <h2><i class="fas fa-map-marked-alt"></i> Our Location</h2>
+                <div id="store-map"></div>
+            </section>
+
+            <section class="faq-section">
+                <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What are your shipping options?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer standard shipping (3-5 business days) and express shipping (1-2 business days). Shipping is free for orders over R500.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do I return an item?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can initiate a return within 14 days of receiving your order. Please contact us with your order number and reason for return, and we'll provide return instructions.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you offer international shipping?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Currently, we only ship within South Africa. We plan to offer international shipping in the near future.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="contact-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>NYATHI X CLOTHING</h3>
+                    <p>Your one-stop shop for the latest fashion trends. Quality and style delivered to your doorstep.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="shipping-info.html">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 153 Brakpan North, Wardans City, SA</p>
+                        <p><i class="fas fa-phone"></i> (+27)81 404 8821</p>
+                        <p><i class="fas fa-envelope"></i> info@nyathixclothing.co.za</p>
+                    </address>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 NYATHI X CLOTHING. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS for Map -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
